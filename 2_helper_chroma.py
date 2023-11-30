@@ -17,7 +17,7 @@ print(os.environ["GOOGLE_API_KEY"])
 llm = GooglePalm(google_api_key=google_api_key, temperature=0.1)
 
 # create embedding
-google_palm_embeddings = GooglePalmEmbeddings(google_api_key="AIzaSyBJ1RzclpxaqSo_vBx2aLPr92U_XHOEemY")
+google_palm_embeddings = GooglePalmEmbeddings(google_api_key="api_key")
 
 # we will create vector database and store it locally and use again (to avoid databasing multiple times)
 vector_db_filepath = "faiss_index"
